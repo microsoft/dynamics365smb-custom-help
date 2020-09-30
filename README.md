@@ -1,4 +1,20 @@
 
+# Tools in the toolkit
+
+The toolkit is available at . The repo contains the following tools and the source code for the tools:
+
+## FieldTopicTextExtractor tool
+
+For more information, see
+
+## HtmlFromRepoGenerator tool
+
+For more information, see 
+
+## HtmlLocaleChanger tool
+
+For more information, see 
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a

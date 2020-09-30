@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldTopicTextExtractor", "FieldTopicTextExtractor\FieldTopicTextExtractor.csproj", "{7CD615D5-D73B-4DC1-A2A2-2A27BAD7091B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CD615D5-D73B-4DC1-A2A2-2A27BAD7091B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD615D5-D73B-4DC1-A2A2-2A27BAD7091B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD615D5-D73B-4DC1-A2A2-2A27BAD7091B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD615D5-D73B-4DC1-A2A2-2A27BAD7091B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E98E64C-A628-4A80-A386-A6D1FB09621A}
+	EndGlobalSection
+EndGlobal
