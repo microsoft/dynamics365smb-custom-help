@@ -1,19 +1,19 @@
 
 # Tools in the toolkit
 
-The toolkit is available at . The repo contains the following tools and the source code for the tools:
+The toolkit is available at https://github.com/microsoft/dynamics365smb-custom-help. The repo contains the following tools and the source code for the tools:
 
 ## FieldTopicTextExtractor tool
 
-For more information, see
+For more information, see [The FieldTopicTextExtractor tool](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/help/custom-help-toolkit-fieldtopictextextractor)
 
 ## HtmlFromRepoGenerator tool
 
-For more information, see 
+For more information, see [The HtmlFromRepoGenerator tool](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/help/custom-help-toolkit-htmlfromrepogenerator)
 
 ## HtmlLocaleChanger tool
 
-For more information, see 
+For more information, see [The HtmlLocaleChanger tool](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/help/custom-help-toolkit-htmllocalechanger)
 
 # Contributing
 
