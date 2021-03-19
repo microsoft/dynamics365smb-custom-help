@@ -142,6 +142,16 @@ namespace HtmlFromRepoGenerator
         public string Repo { get; set; }
 
         /// <summary>
+        /// Gets or sets the GitHub tag for a release.
+        /// </summary>
+        /// <value>
+        /// The GitHub tag for a release.
+        /// </value>
+        [CmdLineArg(ShowInUsage = DefaultBoolean.True, Usage = "v17.0")]
+        [System.ComponentModel.Description("GitHub tag for a release, e.g. v17.0")]
+        public string Tag { get; set; }
+
+        /// <summary>
         /// Gets or sets a value indicating whether [remove git folder].
         /// </summary>
         /// <value>
