@@ -150,7 +150,7 @@ namespace HtmlFromRepoGenerator
             string clonedRepoPath = Path.Combine(parameters.Out, ".git");
             if (!parameters.DoNotClone)
             {
-                clonedRepoPath = CloneRepository(parameters.Repo, parameters.Out);
+                clonedRepoPath = CloneRepository(parameters.Repo, parameters.Out, parameters.Tag);
             }
 
             string enClonedRepoPath = null;
@@ -159,7 +159,7 @@ namespace HtmlFromRepoGenerator
                 enClonedRepoPath = Path.Combine(parameters.EnOut, ".git");
                 if (!String.IsNullOrEmpty(parameters.EnRepo))
                 {
-                    enClonedRepoPath = CloneRepository(parameters.EnRepo, parameters.EnOut);
+                    enClonedRepoPath = CloneRepository(parameters.EnRepo, parameters.EnOut, parameters.Tag);
                 }
             }
 
@@ -388,11 +388,11 @@ namespace HtmlFromRepoGenerator
         /// <param name="url">The URL.</param>
         /// <param name="dest">The dest.</param>
         /// <returns></returns>
-        private static string CloneRepository(string url, string dest)
+        private static string CloneRepository(string url, string dest, string tag)
         {
             Logger.LogInfo($"Trying to clone {url}.");
             CloneProcessor cloneProcessor = new CloneProcessor(Logger);
-            if (!cloneProcessor.TryCloneRepository(url, dest, percentCompleted =>
+            if (!cloneProcessor.TryCloneRepository(url, dest, tag, percentCompleted =>
             {
                 Console.SetCursorPosition(0, Console.CursorTop);
                 Console.CursorVisible = false;

@@ -36,7 +36,7 @@ namespace MainProcessor
         /// <param name="handler">The handler.</param>
         /// <param name="clonedRepoPath">The cloned repo path.</param>
         /// <returns></returns>
-        public bool TryCloneRepository(string repoUrl, string outDir, CloneProgressHandler handler, out string clonedRepoPath)
+        public bool TryCloneRepository(string repoUrl, string outDir, string tag, CloneProgressHandler handler, out string clonedRepoPath)
         {
             _onProgress = handler;
             _logger.LogInfo("Cloning repository is in progress. It may take awhile...");
@@ -49,6 +49,12 @@ namespace MainProcessor
             try
             {
                 clonedRepoPath = Repository.Clone(repoUrl, outDir, options);
+                if (!String.IsNullOrEmpty(tag))
+                {
+                    _logger.LogInfo(Environment.NewLine + "Checking out " + tag);
+                    Repository repo = new Repository(clonedRepoPath);
+                    Commands.Checkout(repo, tag);
+                }
             }
             catch (Exception ex)
             {
