@@ -1,5 +1,7 @@
 **IMPORTANT**
-The HTMLFromRepoGenerator tool is being deprecated. To generate HTML files from Markdown, use another tool, such as MkDocs or Docusaurus. The language-specific repositories are also being deprecated, and will no longer be available around the end of the 2023 calendar year. 
+The HTMLFromRepoGenerator tool has been deprecated. The language-specific repositories for the Business Central documentation are also being deprecated, and will no longer be available after the end of 2022.
+
+If you would like to continue to generate HTML files from the Markdown files in the English repository for the Business Central documentation, use another tool such as MkDocs or Docusaurus.
 
 # Tools in the toolkit
 
@@ -8,14 +10,6 @@ The toolkit is available at https://github.com/microsoft/dynamics365smb-custom-h
 ## FieldTopicTextExtractor tool
 
 For more information, see [The FieldTopicTextExtractor tool](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/help/custom-help-toolkit-fieldtopictextextractor)
-
-## HtmlFromRepoGenerator tool
-
-For more information, see [The HtmlFromRepoGenerator tool](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/help/custom-help-toolkit-htmlfromrepogenerator)
-
-## HtmlLocaleChanger tool
-
-For more information, see [The HtmlLocaleChanger tool](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/help/custom-help-toolkit-htmllocalechanger)
 
 # Contributing
 
